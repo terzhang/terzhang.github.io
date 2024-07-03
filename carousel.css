@@ -1,0 +1,48 @@
+.merry-go-round {
+    white-space: nowrap;
+    font-size: 0;
+    overflow: hidden;
+    cursor: pointer;
+    scroll-behavior: smooth;
+}
+
+.merry-go-round {
+    display: flex;
+    left: 0;
+    width: 100%;
+    padding-left: 0;
+}
+
+.merry-go-round.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.unselectable {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.merry-go-round.dragging li img,
+.merry-go-round li img {
+    pointer-events: none;
+}
+
+.merry-go-round.dragging li,
+.merry-go-round li {
+    pointer-events: none;
+}
+
+/* .merry-go-round li {
+    height: 340px;
+    width: calc(100% / 3);
+    object-fit: cover;
+    margin-left: 14px;
+} */
+
+/* .merry-go-round li:first-child {
+    margin-left: 0;
+} */

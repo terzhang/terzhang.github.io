@@ -1,56 +1,349 @@
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Terry</title>
-</head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-    body {
-        width: 100%;
-    }
+  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="main.css" rel="stylesheet" />
+  <link href="sparkle.css" rel="stylesheet" />
+  <link href="carousel.css" rel="stylesheet" />
 
-    main {
-        width: max-content;
-        padding-left: 1rem;
-        margin: auto;
-    }
+  <body>
+    <main id="about-me">
+      <h1 class="shimmer">Greetings! Terry here 👋</h1>
+      <section class="content">
+        <h2>Info</h2>
+        <ul>
+          <li>🔷 He/Him</li>
+          <li>🍁 Toronto, Canada</li>
+          <li>🐈 Cat person</li>
+        </ul>
+        <h2>About</h2>
+        <ul class="about-list">
+          <li>
+            ✨ An <span class="wavy">emotional, empathetic</span> person that
+            appears
+            <a class="sparkle">
+              <span>confident</span>
+              <img src="./assets/sparkle.svg" alt="sparkle" />
+              <img src="./assets/sparkle.svg" alt="sparkle" />
+              <img src="./assets/sparkle.svg" alt="sparkle" />
+              <img src="./assets/sparkle.svg" alt="sparkle" />
+              <img src="./assets/sparkle.svg" alt="sparkle" />
+            </a>
+          </li>
+          <li>
+            🌱 <span class="shimmer-small">Passionate</span> about Music and
+            Automation
+          </li>
+          <li>
+            🌙 Full-time
+            <span class="fall-off">Software Engineer, part-time</span>
+            Idiot
+          </li>
+          <li>🎮 Enjoys playing <a class="link" href="">Overwatch 2</a></li>
+          <li>🕹️ Loves co-op <a class="link" href="">games</a></li>
+        </ul>
+        <h2>Talk to me about</h2>
+        <ul class="tab-list" role="tablist">
+          <li id="games" role="none">
+            <input
+              type="radio"
+              id="games-input"
+              name="tabs"
+              role="tab"
+              checked
+            />
+            <label for="games-input" role="tab" aria-selected="true"
+              >👾 Games</label
+            >
+            <div
+              class="tab-content"
+              id="games-content"
+              role="tabpanel"
+              aria-hidden="true"
+              aria-labelledby="games-input"
+            >
+              <ul class="merry-go-round unselectable">
+                <li draggable="false">
+                  <img
+                    class="cover-art"
+                    draggable="false"
+                    src="./assets/covers/back4blood_cover_art.png"
+                    title="back 4 blood"
+                    role="img"
+                  />
+                </li>
+                <li draggable="false">
+                  <img
+                    class="cover-art"
+                    draggable="false"
+                    src="./assets/covers/hollow_knight_cover_art.png"
+                    title="hollow knight"
+                    role="img"
+                  />
+                </li>
+                <li draggable="false">
+                  <img
+                    class="cover-art"
+                    draggable="false"
+                    src="./assets/covers/it_takes_two_cover_art.jpg"
+                    title="it takes two"
+                    role="img"
+                  />
+                </li>
+                <li draggable="false">
+                  <img
+                    class="cover-art"
+                    draggable="false"
+                    src="./assets/covers/lethal_company_600x900_2x.jpg"
+                    title="lethal company"
+                    role="img"
+                  />
+                </li>
+                <li draggable="false">
+                  <img
+                    class="cover-art"
+                    draggable="false"
+                    src="./assets/covers/temtem_cover_art.png"
+                    title="temtem"
+                    role="img"
+                  />
+                </li>
+                <li draggable="false">
+                  <img
+                    class="cover-art"
+                    draggable="false"
+                    src="./assets/covers/getamped2_cover_art.png"
+                    title="getamped 2"
+                    role="img"
+                  />
+                </li>
+                <li draggable="false">
+                  <img
+                    class="cover-art"
+                    draggable="false"
+                    src="./assets/covers/maplestory_cover_art.png"
+                    title="maplestory"
+                    role="img"
+                  />
+                </li>
+                <li draggable="false">
+                  <img
+                    class="cover-art"
+                    draggable="false"
+                    src="./assets/covers/ori_and_the_blind_forest_cover_art.jpg"
+                    title="ori and the blind forest"
+                    role="img"
+                  />
+                </li>
+                <li draggable="false">
+                  <img
+                    class="cover-art"
+                    draggable="false"
+                    src="./assets/covers/overcooked_all_you_can_eat.webp"
+                    title="overcooked all you can eat"
+                    role="img"
+                  />
+                </li>
+                <li draggable="false">
+                  <img
+                    class="cover-art"
+                    draggable="false"
+                    src="./assets/covers/overwatch2_cover_art.jpg"
+                    title="overwatch 2"
+                    role="img"
+                  />
+                </li>
+                <li draggable="false">
+                  <img
+                    class="cover-art"
+                    draggable="false"
+                    src="./assets/covers/portal2_cover_art.jpg"
+                    title="portal 2"
+                    role="img"
+                  />
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="anime" role="none">
+            <input type="radio" id="anime-input" name="tabs" role="tab" />
+            <label for="anime-input" role="tab" aria-selected="false"
+              >📽️ Anime</label
+            >
+            <div
+              class="tab-content"
+              aria-labelledby="anime-input"
+              id="anime-content"
+              role="tabpanel"
+              aria-hidden="false"
+              aria-labelledby="anime-input"
+            >
+              Check out
+              <a
+                class="icon"
+                target="_blank"
+                rel="noopener"
+                href="https://myanimelist.net/animelist/Traicious"
+                >MyAnimeList</a
+              >
+            </div>
+          </li>
+          <li id="music" role="none">
+            <input type="radio" id="music-input" name="tabs" role="tab" />
+            <label for="music-input" role="tab" aria-selected="false"
+              >🎤 Music</label
+            >
+            <div
+              class="tab-content"
+              id="music-content"
+              role="tabpanel"
+              aria-hidden="true"
+              aria-labelledby="music-input"
+            >
+              Checkout my
+              <a
+                class="icon"
+                target="_blank"
+                rel="noopener"
+                href="https://music.tere.ca"
+                >Music server</a
+              >
+              (Access for family only)
+            </div>
+          </li>
+          <li id="fitness" role="none">
+            <input type="radio" id="fitness-input" name="tabs" role="tab" />
+            <label for="fitness-input" role="tab" aria-selected="false"
+              >🏋️ Fitness</label
+            >
+            <div
+              class="tab-content"
+              id="fitness-content"
+              role="tabpanel"
+              aria-hidden="true"
+              aria-labelledby="fitness-input"
+            >
+              10k+ steps / day <br />
+              Trains thrice a week <br />
+              Still can't do a single pullup orz
+            </div>
+          </li>
+        </ul>
 
-    ul {
-        list-style: none;
-    }
-
-    h1 {
-        text-align: center;
-    }
-</style>
-
-<body>
-    <h1>Greetings! Terry here 👋</h1>
-    <main>
-        <h2>Info</h1>
-            <ul>
-                <li>🔷 Pronoun: He/Him</li>
-                <li>🏡 Location: Toronto, Canada 🍁</li>
-                <li>📧 Email: <a href="mailto:terzhang@hotmail.com">terzhang@hotmail.com</a></li>
-                <li>🖥️ GitHub: <a href="https://github.com/terzhang">/terzhang</a></li>
-            </ul>
-            <h2>Apps</h2>
-            <ul>
-                <!-- <li>📝 <a href="/memo">Memos</a></li> -->
-                <li>⛏️ Minecraft (invite-only)</li>
-                <li>🚧 Game Vault (coming soon)</li>
-                <li>🚧 Media Server (coming soon)</li>
-                <li>🚧 Music Server (coming soon)</li>
-            </ul>
-            <h2>Fun facts</h2>
-            <ul>
-                <li>💨 10k+ steps / day (>3 weeks so far)</li>
-                <li>🌱 Passionate about self-hosting things lately</li>
-                <li>🕕 Usually responds after 6 pm EST</li>
-                <li>🎮 Mainly plays Overwatch 2</li>
-            </ul>
+        <div>
+          <h2>Family Apps</h2>
+          <ul class="selection_list app-list">
+            <li>
+              🤖
+              <a
+                class="app-list-link link"
+                target="_blank"
+                rel="noopener"
+                href="https://chat.tere.ca"
+                >Chat AI</a
+              >
+            </li>
+            <li>
+              ☁️
+              <a
+                class="app-list-link link"
+                target="_blank"
+                rel="noopener"
+                href="https://nextcloud.tere.ca"
+                >Private Cloud</a
+              >
+            </li>
+            <li>
+              📖
+              <a
+                class="app-list-link link"
+                target="_blank"
+                rel="noopener"
+                href="https://book.tere.ca"
+                >Book server</a
+              >
+            </li>
+            <li>
+              📼
+              <a
+                class="app-list-link link"
+                target="_blank"
+                rel="noopener"
+                href="https://media.tere.ca"
+                >Media Server</a
+              >
+            </li>
+            <li>
+              🎵
+              <a
+                class="app-list-link link"
+                target="_blank"
+                rel="noopener"
+                href="https://music.tere.ca"
+                >Music Server</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <hr />
+      <footer id="socials">
+        <h3>Socials</h3>
+        <div>
+          <a
+            class="icon"
+            target="_blank"
+            rel="noopener"
+            id="github_name"
+            href="https://github.com/terzhang"
+          >
+            <img src="./assets/github.svg" alt="Github" role="img"
+          /></a>
+          <a
+            onclick="copyToClipboard(event, 'teredere')"
+            class="icon tooltip"
+            id="discord_name"
+            href="teredere"
+            ><img src="./assets/discord.svg" alt="Discord" role="img"
+          /></a>
+          <a
+            class="icon"
+            target="_blank"
+            rel="noopener"
+            id="steam_name"
+            href="https://steamcommunity.com/id/terryme"
+            ><img src="./assets/steam.svg" alt="Steam" role="img"
+          /></a>
+          <a
+            class="icon"
+            target="_blank"
+            rel="noopener"
+            id="epic_games_name"
+            href="https://store.epicgames.com/u/9a75c8358be545ada2ed7b9fe3983266"
+            ><img src="./assets/epic-games.svg" alt="Epic Games" role="img"
+          /></a>
+          <a
+            onclick="copyToClipboard(event, 'Tere#11930')"
+            class="icon tooltip"
+            id="battle_tag"
+            href="Tere#11930"
+            ><img src="./assets/overwatch.svg" alt="Overwatch" role="img"
+          /></a>
+          <a
+            class="icon"
+            target="_blank"
+            rel="noopener"
+            href="https://myanimelist.net/animelist/Traicious"
+            ><img src="./assets/myanimelist.svg" alt="MyAnimeList" role="img"
+          /></a>
+        </div>
+        <a class="icon link" href="mailto:terzhang@hotmail.com">📧Email</a>
+      </footer>
     </main>
-</body>
-
+    <script src="./index.js"></script>
+    <script src="./carousel.js"></script>
+  </body>
 </html>
