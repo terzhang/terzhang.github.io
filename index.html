@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Terry</title>
+    <title>Terry's Homepage</title>
   </head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="main.css" rel="stylesheet" />
@@ -12,6 +12,27 @@
   <body>
     <main id="about-me">
       <h1 class="shimmer">Greetings! Terry here 👋</h1>
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          top: 0;
+          right: 0;
+          position: absolute;
+          padding: 1em;
+        "
+      >
+        <!-- <h1 class="shimmer">Greetings! Terry here 👋</h1> -->
+        <button type="button" id="login">
+          <img
+            src="./assets/user-icon.svg"
+            alt="User Icon"
+            style="vertical-align: middle; margin-right: 8px"
+          />
+          Login
+        </button>
+      </div>
       <section class="content">
         <h2>Info</h2>
         <ul>
@@ -232,62 +253,6 @@
             </div>
           </li>
         </ul>
-
-        <div>
-          <h2>Family Apps</h2>
-          <ul class="selection_list app-list">
-            <li>
-              🤖
-              <a
-                class="app-list-link link"
-                target="_blank"
-                rel="noopener"
-                href="https://chat.tere.ca"
-                >Chat AI</a
-              >
-            </li>
-            <li>
-              ☁️
-              <a
-                class="app-list-link link"
-                target="_blank"
-                rel="noopener"
-                href="https://nextcloud.tere.ca"
-                >Private Cloud</a
-              >
-            </li>
-            <li>
-              📖
-              <a
-                class="app-list-link link"
-                target="_blank"
-                rel="noopener"
-                href="https://book.tere.ca"
-                >Book server</a
-              >
-            </li>
-            <li>
-              📼
-              <a
-                class="app-list-link link"
-                target="_blank"
-                rel="noopener"
-                href="https://media.tere.ca"
-                >Media Server</a
-              >
-            </li>
-            <li>
-              🎵
-              <a
-                class="app-list-link link"
-                target="_blank"
-                rel="noopener"
-                href="https://music.tere.ca"
-                >Music Server</a
-              >
-            </li>
-          </ul>
-        </div>
       </section>
       <hr />
       <footer id="socials">
@@ -343,7 +308,7 @@
         <a class="icon link" href="mailto:terzhang@hotmail.com">📧Email</a>
       </footer>
     </main>
-    <script src="./index.js"></script>
-    <script src="./carousel.js"></script>
+    <script src="./src/index.js"></script>
+    <script src="./src/carousel.js"></script>
   </body>
 </html>

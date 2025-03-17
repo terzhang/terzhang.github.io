@@ -260,6 +260,7 @@ img {
 
 .icon {
     display: inline-block;
+    -webkit-mask-size: cover;
     mask-size: cover;
     font-size: larger;
     text-align: start;
@@ -462,4 +463,12 @@ li:hover .fly {
         transform: translate(60px, 300px) rotate(270deg) scale(0.9);
         opacity: 0;
     }
+}
+
+#login,
+#logout {
+    padding: 10px 20px 10px 10px;
+    font-size: 16px;
+    vertical-align: middle;
+    font-weight: bold;
 }

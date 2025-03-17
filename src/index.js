@@ -73,3 +73,7 @@ function copyToClipboard(event, text) {
     }
   );
 }
+
+// document.getElementById("signOut").addEventListener("click", async () => {
+//     await signOutRedirect();
+// });

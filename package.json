@@ -1,0 +1,21 @@
+{
+  "name": "tere.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild ./src/index.js --bundle --minify --sourcemap --outfile=dist/index.js",
+    "build:module": "esbuild ./src/module.js --bundle --outfile=dist/module.js --format=esm",
+    "build:login": "esbuild ./src/login.js --bundle --minify --sourcemap --outfile=dist/login.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "oidc-client-ts": "^3.2.0",
+    "tere.github.io": "file:"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.1"
+  }
+}
